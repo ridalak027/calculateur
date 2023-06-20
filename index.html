@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>RIDA CALCULATEUR</h1>
+    <div class="cotainer">
+      <div class="calculateur">
+        <div class="display">
+          <input type="text" name="display" id="display" />
+        </div>
+
+        <div class="bottom">
+          <input
+            type="button"
+            value="AC"
+            class="operateur"
+            onclick="return AC()"
+          />
+          <input
+            type="button"
+            value="DEL"
+            class="operateur"
+            onclick="return DEL()"
+            id="DEL"
+          />
+          <input
+            type="button"
+            value="."
+            class="operateur"
+            onclick="return add('.')"
+          />
+          <input
+            type="button"
+            value="/"
+            class="operateur"
+            onclick="return add('/')"
+          />
+        </div>
+
+        <div class="bottom">
+          <input type="button" value="7" onclick="return add(7)" />
+          <input type="button" value="8" onclick="return add(8)" />
+          <input type="button" value="9" onclick="return add(9)" />
+          <input
+            type="button"
+            value="*"
+            class="operateur"
+            onclick="return add('*')"
+          />
+        </div>
+
+        <div class="bottom">
+          <input type="button" value="4" onclick="return add(4)" />
+          <input type="button" value="5" onclick="return add(5)" />
+          <input type="button" value="6" onclick="return add(6)" />
+          <input
+            type="button"
+            value="-"
+            class="operateur"
+            onclick="return add('-')"
+          />
+        </div>
+
+        <div class="bottom">
+          <input type="button" value="1" onclick="return add(1)" />
+          <input type="button" value="2" onclick="return add(2)" />
+          <input type="button" value="3" onclick="return add(3)" />
+          <input
+            type="button"
+            value="+"
+            class="operateur"
+            onclick="return add('+')"
+          />
+        </div>
+
+        <div class="bottom">
+          <input type="button" value="0" onclick="return add(0)" />
+          <input type="button" value="00" onclick="return add('00')" />
+          <input
+            type="button"
+            value="="
+            class="equal operateur"
+            onclick="return calcule()"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
